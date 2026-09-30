@@ -1,0 +1,27 @@
+{
+  "name": "mmm-standardmap",
+  "version": "1.0.0",
+  "description": "MagicMirror² module: Chirikov's standard map plotted orbit by orbit, islands of order in a chaotic sea at four kick strengths, drawn for a Raspberry Pi without a GPU.",
+  "main": "MMM-StandardMap.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "MagicMirror",
+    "chaos",
+    "chaos theory",
+    "standard map",
+    "Chirikov",
+    "KAM theorem",
+    "Hamiltonian",
+    "mathematics",
+    "physics",
+    "animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charleswest775/MMM-StandardMap.git"
+  },
+  "author": "Charles West",
+  "license": "MIT"
+}
