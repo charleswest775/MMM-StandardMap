@@ -130,10 +130,18 @@ rests.
 
 ## Performance
 
-Not yet measured on the Pi. What it's designed to cost: an orbit's 2,000 dots are spread over
-the whole canvas, so each change is a full-canvas repaint, but there are only three of them a
-second (like three frames of a 20 fps full redraw, which costs ~150% of a core: so roughly a
-quarter of a core), and none at all once the picture is done at 42 s. Computing an orbit takes
+Measured on a Raspberry Pi 3 B+ (Electron 42, software rendering), 900×900 at 20 fps, as CPU of
+the Electron processes plus the `cage` compositor, in % of one core (the Pi has four), traced a
+quarter of a second at a time over a 45 s page; the mirror between pages: 0.2%.
+
+| | % of one core |
+|---|---|
+| module **hidden** (e.g. another MMM-pages page) | 0.2 |
+| over a 45 s showing | 31 |
+| its first 10 s (the orbits come faster than the eye can tell) | 42 |
+
+Each orbit's 2,000 dots are spread over the whole canvas, so each change repaints it all, but
+there are only three a second, and none once the picture is done at 42 s. Computing an orbit takes
 well under a millisecond.
 
 Why it is drawn this way, from micro-benchmarks on the Pi:

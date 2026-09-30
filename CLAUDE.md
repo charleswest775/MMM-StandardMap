@@ -2,7 +2,7 @@
 
 Charles's MagicMirror² module: Chirikov's standard map, orbit after orbit plotted as dots, the KAM islands and the chaotic sea, at four kick strengths in turn, for his hallway mirror, as one page in a
 rotation of pages. Made on 2026-09-29, one of five new pages (with MMM-ChaoticWaterwheel, MMM-DoubleSlit, MMM-Sandpile, MMM-Harmonograph),
-with the same shell as its siblings.
+with the same shell as its siblings. On the mirror since 2026-09-30.
 
 ## Files
 
@@ -32,7 +32,7 @@ spirit with the sibling modules (MMM-ChaosTheory, MMM-LorenzAttractor, MMM-Doubl
 
 ## Cost on the Pi
 
-Not measured yet. Expected: a full-canvas repaint 3 times a second for 42 s, then resting: roughly a quarter of a core. Measure before relying on it.
+Measured on the Pi, 2026-09-30 (900², 20 fps, Electron + cage over a 45 s page): 31% of a core; hidden 0.2%.
 
 ## Performance findings on the Pi (measured)
 
